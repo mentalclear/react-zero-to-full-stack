@@ -1,0 +1,17 @@
+# Learning basic of writing node server
+
+### Technologies used:
+- NodeJS
+- Express
+- Babel
+
+
+### Endpoints to buil:
+
+`GET /hello` - Sends Back "Hello!"
+
+`GET /people` - Sends an array of people objects
+
+`GET /people/:name` - Sends back a specific person
+
+`GET /file-data` - Reads a file and sends back contents
