@@ -6,7 +6,7 @@
 - Babel
 
 
-### Endpoints to buil:
+### Endpoints to build:
 
 `GET /hello` - Sends Back "Hello!"
 

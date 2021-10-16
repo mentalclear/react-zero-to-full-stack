@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="./generatetable.js">
+    </script>
+    <style>
+        div {
+            margin: 5px;
+        }
+
+        input {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Multiplication table generator</h1>
+        <div>
+            <div>
+                <label>
+                    Number for rows:
+                    <input id="rows-input" type="text">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Number for columns:
+                    <input id="columns-input" type="text">
+                </label>
+            </div>
+            <div>
+                <button onclick="onGeneratePressed()">Generate</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
