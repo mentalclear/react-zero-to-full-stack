@@ -27,6 +27,8 @@ const people = [{
 }];
 
 
+// Before big change for Lesson 2
+
 // Modern way of creating components.
 function App() {
 
