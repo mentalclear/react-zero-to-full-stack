@@ -11,6 +11,7 @@ import {
   UserProfilePage
 }
   from './pages';
+import { UserDataLoader } from './UserDataLoader';
 import { NavBar } from './NavBar';
 import { FormsNavBar } from './FormsNavBar';
 
@@ -39,7 +40,9 @@ function App() {
               <ProtectedPage />
             </Route>
             <Route path="/user">
-              <UserProfilePage />
+              <UserDataLoader>
+                <UserProfilePage />
+              </UserDataLoader>
             </Route>
             <Route path="/forms">
               <Router>

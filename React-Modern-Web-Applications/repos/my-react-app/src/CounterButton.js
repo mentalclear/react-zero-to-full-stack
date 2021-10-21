@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { DangerButton } from "./Button";
 
 export const CounterButton = ({ onIncrement, numberOfClicks }) => {
     // This will not work because react will not rerender the component
@@ -19,7 +20,7 @@ export const CounterButton = ({ onIncrement, numberOfClicks }) => {
     return (
         <>
             <p>You've clicked the button {numberOfClicks} times</p>
-            <button onClick={onIncrement}>Click Me!</button>
+            <DangerButton buttonColor="red" onClick={onIncrement}>Click Me!</DangerButton>
         </>
     );
 }
