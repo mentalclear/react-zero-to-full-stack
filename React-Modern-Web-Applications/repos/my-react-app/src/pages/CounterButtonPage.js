@@ -1,15 +1,12 @@
-import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
-import { parse } from 'query-string';
+import React, { useState, useEffect } from "react";
 import { CounterButton } from '../CounterButton';
 import { CongratulationMessage } from '../CongratulationMessage'
 import { DisplayIf } from "../DisplayIf";
+import { usePersistentState } from "../usePersistentState";
 
 
 export const CounterButtonPage = () => {
-  const location = useLocation();
-  const startingValue = parse(location.search).startingValue || 0;
-  const [numberOfClicks, setNumberOfCliccks] = useState(Number(startingValue));
+  const [numberOfClicks, setNumberOfCliccks] = usePersistentState('numberOfClicks', 0, Number);
   const [hideMessage, setHideMessage] = useState(false);
 
   const increment = () => setNumberOfCliccks(numberOfClicks + 1);
