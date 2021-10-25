@@ -1,4 +1,4 @@
-const args = process.argv.slice(2);
+// const args = process.argv.slice(2);
 
 function generateFibonacci(howMany) {
     let x = 1;
@@ -16,5 +16,10 @@ function generateFibonacci(howMany) {
 }
 
 // Converting to Number. Otherwise treated as string
-const howMany = Number(args[0]);
-console.log(generateFibonacci(howMany));
+// const howMany = Number(args[0]);
+// console.log(generateFibonacci(howMany));
+
+// Old exports:
+
+//module.exports = generateFibonacci; // Default export
+module.exports.generateFibonacci = generateFibonacci; // Named export
