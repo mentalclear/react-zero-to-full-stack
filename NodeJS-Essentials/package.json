@@ -12,7 +12,9 @@
   "author": "Dmitrii Kilishek",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "@hapi/hapi": "^20.2.1",
+    "express": "^4.17.1",
+    "koa": "^2.13.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.15.7",
