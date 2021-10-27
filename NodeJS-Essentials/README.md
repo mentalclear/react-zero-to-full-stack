@@ -13,3 +13,9 @@ Donwloaded from here: https://github.com/coreybutler/nvm-windows
 - `npm install --save-dev nodemon` - Auto server restart, added to dev deps only.
 - `npm install --save-dev @babel/core @babel/preset-env @babel/cli @babel/node` - To install Babel
 - `npm install --save-dev @babel/plugin-proposal-optional-chaining` for optional chaining
+
+### MongoDB installation:
+- `npm install mongodb` 
+
+### MySQL installation:
+- `npm install mysql`
