@@ -19,3 +19,7 @@ Donwloaded from here: https://github.com/coreybutler/nvm-windows
 
 ### MySQL installation:
 - `npm install mysql`
+
+### For Websockets, Socket.io installation:
+- `npm install socket.io`
+- `npm install socket.io-client`
