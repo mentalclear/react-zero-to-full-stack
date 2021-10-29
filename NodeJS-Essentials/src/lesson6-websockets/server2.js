@@ -1,10 +1,11 @@
 import { io } from 'socket.io-client';
+import { colorfulLog } from 'colorful-log-dk';
 
 const createSocketClient = (name, interval) => {
     const socket = io('http://localhost:8000/');
 
     socket.on('connect', () => {
-        console.log(`${name} is connected!`);
+        colorfulLog(`${name} is connected!`);
 
         setInterval(() => {
             // const randomNumber = Math.ceil(Math.random() * 100);            
@@ -14,7 +15,7 @@ const createSocketClient = (name, interval) => {
     });
 
     socket.on('disconnect', () => {
-        console.log(`${name} is disconnected`);
+        colorfulLog(`${name} is disconnected`);
     });
 }
 
